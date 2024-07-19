@@ -1,0 +1,382 @@
+<!-- Agenda:
+1.Basic Structures of HTML.
+2.Anchor tag and image tag.
+3.Lists.
+4.Tables in HTML.
+5.HTML5 tags : Audio, Video Tags.
+6.Semantic HTML.
+7.Forms.
+8.HTML5 API's : Geolocation API, Canavas API.
+9.Logical Vs Physical Tags.
+10.HTML entities.
+11.Meta Tags.  -->
+
+
+<!-- ### 1. Basic Structures of HTML
+- Introduction to HTML
+- DOCTYPE declaration
+- HTML document structure: `<html>`, `<head>`, `<body>`-->
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A brief description of the page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Rakesh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+
+    <!-- - Basic tags: `<title>`, `<h1>` to `<h6>`, `<p>`, `<br>`, `<hr>`  -->
+    <h1>Heading1</h1>
+    <h2>Heading1</h2>
+    <h3>Heading1</h3>
+    <h4>Heading1</h4>
+    <h5>Heading1</h5>
+    <h6>Heading1</h6>
+    <p>who is sitting beside me is a <span>burden on the Earth </span> <br>That person is doing training for Placement.
+    </p>
+
+    <!-- iFrame displaying the same URL within the page -->
+    <h1>Embedded Music Players</h1>
+
+    <h2>Spotify</h2>
+    <iframe src="https://open.spotify.com/embed/album/1ATL5GLyefJaxhQzSPVrLX" width="300" height="380" frameborder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+
+    <!-- <h2>SoundCloud</h2>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189154331&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"  width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" ></iframe> -->
+
+    <h2>YouTube</h2>
+    <iframe src="https://www.youtube.com/embed/kb3NQzVX7f4?feature=shared" width="560" height="315" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- <h2>Bandcamp</h2>
+        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3471361857/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/"  style="border: 0; width: 350px; height: 470px;"  seamless><a href="https://artist.bandcamp.com/album/album-name">Album Name by Artist</a></iframe> -->
+
+    <h1>Embedded Gist</h1>
+    <div style="width: 100%; height: 300px; overflow: auto;">
+        <script src="https://gist.github.com/RAKESH9798/5346c0ebaf3729bc3b091a3cdb7e4a50.js"></script>
+    </div>
+
+    <a href="https://github.com/RAKESH9798">
+        <img src="https://github-readme-stats.vercel.app/api?username=RAKESH9798&show_icons=true&theme=radical"
+            alt="GitHub Stats" />
+    </a>
+
+
+    <h1>LeetCode Profile</h1>
+    <!-- LeetCode Stats Widget -->
+    <a href="https://leetcode.com/RAKESH9798" target="_parent">
+        <img src="https://leetcode-stats.vercel.app/api?username=RAKESH9798" alt="LeetCode Stats" />
+    </a>
+
+    <hr>
+
+    <h1>LeetCode Profile within iframe</h1>
+
+    <!-- Container for the iframe with inline styles -->
+    <div style="width: 100%; height: 600px; overflow: hidden;">
+        <iframe src="https://leetcode.com/RAKESH9798" style="width: 100%; height: 400px; border: none;"
+            title="LeetCode Profile">
+        </iframe>
+    </div>
+
+
+    <!-- ### 2. Anchor Tag and Image Tag
+- Anchor tag: `<a>`
+  - Attributes: `href`, `target`, `title`
+  - Creating links: internal and external -->
+
+    <!-- Link that opens in a new tab or window -->
+    <a href="https://github.com/RAKESH9798/ProjectOrientation-" target="_blank" title="Anchor Tag">Anchor
+        Tag:target="_blank"</a><br>
+
+    <!-- Link that opens in the parent frame -->
+    <a href="https://github.com/RAKESH9798/ProjectOrientation-" target="_parent" title="Anchor Tag">Anchor
+        Tag:target="_parent"</a><br>
+
+    <!-- Link that opens in the same frame or window -->
+    <a href="https://github.com/RAKESH9798/ProjectOrientation-" target="_self" title="Anchor Tag">Anchor
+        Tag:target="_self"</a><br>
+
+    <!-- Link that opens in the full body of the window, breaking out of any frames -->
+    <a href="https://github.com/RAKESH9798/ProjectOrientation-" target="_top" title="Anchor Tag">Anchor
+        Tag:target="_top"</a><br>
+
+    <hr>
+
+
+
+    <h2>LeetCode Stats</h2>
+    <a href="https://leetcode.com/RAKESH9798" target="_blank">
+        <!-- - Image tag: `<img>`
+  - Attributes: `src`, `alt`, `width`, `height` -->
+        <img src="https://leetcode-stats.vercel.app/api?username=RAKESH9798" alt="LeetCode Stats"
+            style="width: 100%; max-width: 600px;" />
+    </a>
+
+
+    <!-- ### 3. Lists
+- Ordered lists: `<ol>`, `<li>`
+- Unordered lists: `<ul>`, `<li>`
+- Description lists: `<dl>`, `<dt>`, `<dd>` -->
+
+    <!-- Unordered List -->
+    <ul>UnOrdered List
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol> Ordered List
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <!-- Description List -->
+    <dl> Description List
+        <dt>Description Title 1</dt>
+        <dd>Description Data 1</dd>
+        <dt>Description Title 2</dt>
+        <dd>Description Data 2</dd>
+    </dl>
+
+
+
+    <!-- ### 4. Tables in HTML
+- Basic table structure: `<table>`, `<tr>`, `<td>`, `<th>`
+- Table attributes: `border`, `cellpadding`, `cellspacing`
+- Advanced table features: `<thead>`, `<tbody>`, `<tfoot>`, `colspan`, `rowspan` -->
+    <table border="5" cellpadding="15" cellspacing="20">
+        <tr>
+            <th colspan="5">Table Heading colspan</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Table data rowspan</td>
+            <td>Table data</td>
+            <td>Table data</td>
+            <td>Table data</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Table data</td>
+            <td>Table data</td>
+            <td>Table data</td>
+            <td>Table data</td>
+        </tr>
+    </table>
+
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+                <td>Table Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- ### 5. HTML5 Tags: Audio, Video Tags
+- Audio tag: `<audio>`
+  - Attributes: `controls`, `src`, `loop`, `autoplay`
+  - Example usage
+- Video tag: `<video>`
+  - Attributes: `controls`, `src`, `poster`, `width`, `height`, `autoplay`
+  - Example usage -->
+
+    <audio src="../Assets/song.mp4" controls></audio>
+    <video src="../Assets/song.mp4" controls width="400px" height="400px"></video>
+
+    <!-- ### 6. Semantic HTML
+- Importance of semantic HTML
+- Common semantic tags: `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`, `<figure>`, `<figcaption>`, `<main>` -->
+    <header>
+        Header
+    </header>
+    <main>
+        <nav>
+            <a href="mailto:rakeshranjan804432@gmail.com">Click Here to Email Me</a>
+        </nav>
+        <article>
+            <h1>Article Title</h1>
+            <p>This is an article section. It can include paragraphs, images, and other content.</p>
+        </article>
+        <aside>
+            <h2>Aside Title</h2>
+            <p>This is an aside section. It typically contains content related to the main article but separate from it.
+            </p>
+        </aside>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <figcaption>FigCaption: Description of the image</figcaption>
+        </figure>
+    </main>
+    <footer>Footer</footer>
+
+    <!-- ### 7. Forms
+- Form structure: `<form>`, `action`, `method`
+- Input types: `<input>` (text, password, radio, checkbox, submit, etc.)
+- Labels and fieldsets: `<label>`, `<fieldset>`, `<legend>`
+- Textarea and select: `<textarea>`, `<select>`, `<option>` -->
+    <hr>
+    <h1>Contact Form</h1>
+
+    <form action="mailto:rakeshranjan804432@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label>Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label><br>
+
+        <label>Language:</label>
+        <input type="checkbox" id="hindi" name="language" value="Hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="english" name="language" value="English">
+        <label for="english">English</label>
+        <input type="checkbox" id="bhojpuri" name="language" value="Bhojpuri">
+        <label for="bhojpuri">Bhojpuri</label><br>
+
+        <label for="state">Select Your State:</label>
+        <select name="state" id="state">
+            <option value="Bihar">Bihar</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Delhi">Delhi</option>
+        </select><br>
+
+        <label for="message">Do you want to say something:</label><br>
+        <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- ### 8. HTML5 APIs: Geolocation API, Canvas API
+- Geolocation API
+  - Using `navigator.geolocation`
+  - Methods: `getCurrentPosition()`, `watchPosition()`
+  - Example usage
+- Canvas API
+  - `<canvas>` tag
+  - Drawing shapes, lines, and text
+  - Example usage -->
+
+    <h1>Your Current Location</h1>
+    <button onclick="Getlocation()">Get Location</button>
+    <p id="location"></p>
+    <script>
+        function Getlocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                document.getElementById("location").innerHTML = "GeoLocation is not supported by Your Browser";
+            }
+        }
+
+        function showPosition(position) {
+            const latitue = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            document.getElementById("location").innerHTML = "Latitude: " + latitue + ", Longitude: " + longitude;
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById("location").innerHTML = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById("location").innerHTML = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById("location").innerHTML = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById("location").innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
+
+    <h1>Canvas Example</h1>
+    <canvas id="myCanvas" width="500" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Drawing a rectangle
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(10, 10, 150, 100);
+
+        // Drawing a circle
+        ctx.beginPath();
+        ctx.arc(300, 200, 50, 0, 2 * Math.PI);
+        ctx.strokeStyle = 'red';
+        ctx.stroke();
+
+        // Drawing text
+        ctx.font = '30px Arial';
+        ctx.fillStyle = 'green';
+        ctx.fillText('Hello Canvas!', 50, 350);
+    </script>
+
+
+
+    <!-- ### 9. Logical vs Physical Tags
+- Logical tags: `<em>`, `<strong>`, `<cite>`, `<dfn>`
+- Physical tags: `<b>`, `<i>`, `<u>`, `<tt>`
+- Differences and usage scenarios -->
+
+    <p>Logical tags: <em>em</em> <strong>strong </strong> <cite>cite </cite><dfn> dfn</dfn></p>
+    <p>Physical tags: <b>b </b><i>i </i><u>u </u><tt>tt</tt></p>
+
+    <!-- ### 10. HTML Entities
+- Definition and importance of HTML entities
+- Common entities: `&amp;`, `&lt;`, `&gt;`, `&quot;`, `&apos;`, `&nbsp;`
+- Using character codes -->
+
+    &copy;&apos;Rakesh 💗😘 💕 HTML&apos;
+
+    <!-- ### 11. Meta Tags
+- Purpose of meta tags
+- Common meta tags: `<meta charset="UTF-8">`, `<meta name="description">`, `<meta name="keywords">`, `<meta name="author">`, `<meta name="viewport">`
+- SEO and meta tags -->
+
+    <!-- <meta charset="UTF-8">
+    <meta name="description" content="A brief description of the page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Rakesh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+</body>
+
+</html>
